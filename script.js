@@ -16,8 +16,8 @@ document.getElementById('cards').addEventListener('click', function (e) {
         if (coinNumber <= 0) {
             alert('You can not call right now')
             return;
-        } 
-        
+        }
+
         const serviceName = e.target.parentNode.parentNode.children[1].children[0].innerText;
         const serviceNumber = e.target.parentNode.parentNode.children[2].children[0].innerText;
         let date = new Date().toLocaleTimeString()
@@ -54,6 +54,9 @@ document.getElementById('cards').addEventListener('click', function (e) {
         const copyNumber = Number(copy.innerText) + 1
         copy.innerText = copyNumber;
 
-        return;
+        const serviceNum = e.target.parentNode.parentNode.children[2].children[0].innerText;
+        navigator.clipboard.writeText(serviceNum).then(() => {
+            alert(`Copied: ${serviceNum}`);
+        });
     }
 })
