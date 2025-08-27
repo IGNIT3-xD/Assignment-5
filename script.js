@@ -13,13 +13,14 @@ document.getElementById('cards').addEventListener('click', function (e) {
         const coin = document.getElementById('coin');
         const coinNumber = Number(coin.innerText);
 
-        if (coinNumber <= 0) {
-            alert('You can not call right now')
+        if (coinNumber < 20) {
+            alert("❌ আপনার পর্যাপ্ত কয়েন নেই ! কল করতে ২০ কয়েন লাগবে ।");
             return;
         }
 
         const serviceName = e.target.parentNode.parentNode.children[1].children[0].innerText;
         const serviceNumber = e.target.parentNode.parentNode.children[2].children[0].innerText;
+        
         let date = new Date().toLocaleTimeString()
         // console.log(date)
 
