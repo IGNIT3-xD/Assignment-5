@@ -21,7 +21,7 @@
         </div>
         <div class="flex gap-2 lg:gap-4">
             <div class="flex items-center justify-center gap-2 bg-amber-100/40 rounded-full px-3 py-2 lg:px-6 lg:py-2">
-                <p class="lg:font-bold">0</p>
+                <p id="heart" class="lg:font-bold">0</p>
                 <img class="w-5 lg:w-7" src="./resources/assets/heart.png" alt="">
             </div>
 
@@ -50,14 +50,14 @@
     </div>
 
     <!-- Main page layout-->
-    <main class="lg:grid lg:grid-cols-5 mt-10 px-4 lg:px-0 lg:w-11/12 mx-auto">
+    <main class="grid lg:grid-cols-8 my-10 px-4 lg:px-0 lg:w-11/12 mx-auto gap-5">
         <!-- Cards parent-->
-        <section class="lg:col-span-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
-             <!-- 1 -->
+        <section id="cards" class="lg:col-span-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- 1 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
@@ -68,8 +68,9 @@
                     <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -77,20 +78,21 @@
             <!-- 2 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
-                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/police.png" alt="">
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">পুলিশ</h1>
+                    <p class="text-gray-600 mt-1">Police</p>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">পুলিশ</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -98,20 +100,21 @@
             <!-- 3 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
-                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/fire-service.png" alt="">
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">ফায়ার সার্ভিস</h1>
+                    <p class="text-gray-600 mt-1">Fire Service</p>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">ফায়ার</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -119,20 +122,21 @@
             <!-- 4 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
-                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/ambulance.png" alt="">
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">অ্যাম্বুলেন্স</h1>
+                    <p class="text-gray-600 mt-1">Ambulance</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">1994-999999</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">স্বাস্থ্য</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -141,19 +145,20 @@
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">নারী ও শিশু সহায়তা</h1>
+                    <p class="text-gray-600 mt-1">Women & Child Helpline</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">109</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সহায়তা</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -162,19 +167,20 @@
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">দুদক</h1>
+                    <p class="text-gray-600 mt-1">Anti-Corruption</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">106</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সরকারি</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -183,19 +189,20 @@
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">বিদ্যুৎ বিভ্রাট</h1>
+                    <p class="text-gray-600 mt-1">Electricity Outage</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">16216</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">বিদ্যুৎ</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -203,20 +210,21 @@
             <!-- 8 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
-                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/brac.png" alt="">
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">ব্র্যাক</h1>
+                    <p class="text-gray-600 mt-1">Brac</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">16445</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">এনজিও</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
@@ -224,32 +232,47 @@
             <!-- 9 -->
             <div class="rounded-xl p-5 shadow-sm flex flex-col gap-6 bg-white">
                 <div class="flex justify-between items-center">
-                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/emergency.png" alt="">
-                    <i class="hgi hgi-stroke hgi-favourite text-2xl cursor-pointer"></i>
+                    <img class="w-10 bg-[#FFE3E2] p-2 rounded-xl" src="./resources/assets/Bangladesh-Railway.png" alt="">
+                    <i class="heart-btn hgi hgi-stroke hgi-favourite text-2xl cursor-pointer hover:text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-gray-600 mt-1">National Emergency</p>
+                    <h1 class="font-bold text-xl">বাংলাদেশ রেলওয়ে</h1>
+                    <p class="text-gray-600 mt-1">Bangladesh Railway</p>
                 </div>
                 <div>
-                    <h1 class="font-bold text-xl">999</h1>
-                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">সার্বজনীন</div>
+                    <h1 class="font-bold text-xl">163</h1>
+                    <div class="badge bg-gray-300/50 text-gray-500 p-4 rounded-full mt-2">পরিবহন</div>
                 </div>
                 <div class="flex items-center justify-around">
-                    <button class="btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
-                    <button class="btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
+                    <button class="copy-btn btn border-gray-400/40 rounded-xl w-[45%] font-normal"><i
+                            class="hgi hgi-stroke hgi-copy-01"></i>Copy</button>
+                    <button class="call-btn btn bg-[#00A63E] rounded-xl text-white w-[45%] font-normal"><i
                             class="hgi hgi-stroke hgi-call-02"></i>Call</button>
                 </div>
             </div>
         </section>
 
         <!-- History -->
-        <section class="lg:col-span-1">
-            <div>
+        <section class="lg:col-span-2 rounded-xl bg-white shadow-sm p-4">
+            <div class="flex justify-between items-center">
+                <p class="font-medium"><i class="hgi hgi-stroke hgi-clock-02 m-2"></i>Call History</p>
+                <button class="btn btn-warning text-white rounded-full px-6 text-center">Clear</button>
+            </div>
 
+            <div class="flex items-center justify-between p-3 bg-gray-300/20 rounded-xl my-4">
+                <div>
+                    <p>জাতীয় জরুরি সেবা</p>
+                    <p>999</p>
+                </div>
+                <div>
+                    <p>11:36:44 AM</p>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Script -->
+     <script src="/script.js"></script>
 </body>
 
 </html>
