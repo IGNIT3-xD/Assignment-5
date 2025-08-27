@@ -55,8 +55,16 @@ document.getElementById('cards').addEventListener('click', function (e) {
         copy.innerText = copyNumber;
 
         const serviceNum = e.target.parentNode.parentNode.children[2].children[0].innerText;
-        navigator.clipboard.writeText(serviceNum).then(() => {
-            alert(`Copied: ${serviceNum}`);
-        });
+        // navigator.clipboard.writeText(serviceNum).then(() => {
+        //     alert(`Copied: ${serviceNum}`);
+        // });
+
+        const textArea = document.createElement("textarea");
+        textArea.value = serviceNum;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+        alert(`Copied: ${serviceNum}`);
     }
 })
