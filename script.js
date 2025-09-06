@@ -1,12 +1,45 @@
 document.getElementById('cards').addEventListener('click', function (e) {
 
-    // Heart Functionality
-    if (e.target.className.includes('heart-btn')) {
-        const heart = document.getElementById('heart');
-        let heartNumber = Number(heart.innerText) + 1;
-        heart.innerText = heartNumber;
-        return;
+    // Extra
+    const heart = document.getElementById('heart');
+    let count = Number(heart.innerText);
+
+    const parentDiv = e.target.closest('div');
+    const heartBtn1 = parentDiv.querySelector('.heart-btn');
+    const heartBtn2 = parentDiv.querySelector('.heart-btn-fill');
+
+    if (e.target.classList.contains('heart-btn')) {
+        count += 1;
+        heart.innerText = count;
+
+        heartBtn1.classList.add('hidden');
+        heartBtn2.classList.remove('hidden');
     }
+
+    else if (e.target.classList.contains('heart-btn-fill')) {
+        count -= 1;
+        heart.innerText = count;
+
+        heartBtn1.classList.remove('hidden');
+        heartBtn2.classList.add('hidden');
+    }
+
+    // Heart Functionality
+    // if (e.target.className.includes('heart-btn')) {
+    //     const heart = document.getElementById('heart');
+    //     let heartNumber = Number(heart.innerText) + 1;
+    //     heart.innerText = heartNumber;
+
+    //     // Extra
+    //     const heartDiv = e.target.closest('div');
+    //     const heartBtn1 = heartDiv.querySelector(".heart-btn");
+    //     const heartBtn2 = heartDiv.querySelector(".heart-btn-fill");
+
+    //     heartBtn1.classList.add('hidden');
+    //     heartBtn2.classList.remove('hidden');
+
+    //     return;
+    // }
 
     // Call Functionality and Add/Clear Hsitory
     if (e.target.className.includes('call-btn')) {
@@ -20,7 +53,7 @@ document.getElementById('cards').addEventListener('click', function (e) {
 
         const serviceName = e.target.parentNode.parentNode.children[1].children[0].innerText;
         const serviceNumber = e.target.parentNode.parentNode.children[2].children[0].innerText;
-        
+
         let date = new Date().toLocaleTimeString()
         // console.log(date)
 
